@@ -12,7 +12,7 @@ app.post("/api/linkpreviewer", async (req, res) => {
   const { text: url } = req.body;
   const linkData = await getData(url);
 
-  console.log(linkData);
+  // console.log(linkData);
   res.status(200).json(linkData);
 });
 
